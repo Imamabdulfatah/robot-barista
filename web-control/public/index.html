@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Kopi — Stasiun A / B / C</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Robot Kopi</h1>
+    <p class="subtitle">Pilih stasiun penempatan. <strong>Sajikan</strong> = alur lengkap (ambil gelas → seduh → taruh). <strong>Penempatan</strong> = hanya bawa ke meja (gelas sudah siap).</p>
+
+    <section class="station" data-station="a">
+      <h2>Stasiun A</h2>
+      <div class="actions">
+        <button type="button" class="btn primary" data-action="sajikan">Sajikan kopi A</button>
+        <button type="button" class="btn secondary" data-action="penempatan">Penempatan A</button>
+      </div>
+    </section>
+
+    <section class="station" data-station="b">
+      <h2>Stasiun B</h2>
+      <div class="actions">
+        <button type="button" class="btn primary" data-action="sajikan">Sajikan kopi B</button>
+        <button type="button" class="btn secondary" data-action="penempatan">Penempatan B</button>
+      </div>
+    </section>
+
+    <section class="station" data-station="c">
+      <h2>Stasiun C</h2>
+      <div class="actions">
+        <button type="button" class="btn primary" data-action="sajikan">Sajikan kopi C</button>
+        <button type="button" class="btn secondary" data-action="penempatan">Penempatan C</button>
+      </div>
+    </section>
+
+    <p id="status" class="status" aria-live="polite">Siap.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

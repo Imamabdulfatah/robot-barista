@@ -1,0 +1,52 @@
+# --- Rahasia & konfigurasi lokal (JANGAN di-push) ---
+robot.config.ini
+.env
+.env.*
+!.env.example
+web-control/.env
+web-control/.env.*
+!web-control/.env.example
+
+# --- Build Visual Studio ---
+.vs/
+**/.vs/
+**/x64/
+**/Debug/
+**/Release/
+**/ipch/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+ipch/
+x64/
+Debug/
+Release/
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+
+# --- Node.js ---
+web-control/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS & editor ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# --- SDK / binary (opsional: hapus baris lib jika ingin commit dependensi) ---
+# dependens/auboi5/lib/*.lib
